@@ -1,0 +1,17 @@
+{
+  "name": "template-rest-stack",
+  "private": true,
+  "workspaces": [
+    "api",
+    "web"
+  ],
+  "scripts": {
+    "dev": "concurrently -n api,web 'npm --workspace api run dev' 'npm --workspace web run dev'",
+    "dev:api": "npm --workspace api run dev",
+    "dev:web": "npm --workspace web run dev",
+    "db:seed": "npm --workspace api run db:seed"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
