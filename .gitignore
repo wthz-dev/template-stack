@@ -1,0 +1,17 @@
+node_modules
+.env
+.env.*
+.DS_Store
+
+api/node_modules
+api/.env
+api/.env.*
+api/logs
+api/uploads
+
+web/node_modules
+web/dist
+web/.env
+web/.env.*
+
+infra/volumes
